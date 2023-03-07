@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      
+    <title>Makeup Products</title>
+    <style>
+      .makeup-container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .card {
+        width: 150px;
+        min-height: 100px;
+        background: rgb(61, 222, 168);
+        border-radius: 10px;
+        margin: 10px;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .image {
+        width: 50px;
+        height: 50px;   
+        padding: 50px;
+      }
+      body{
+        background-color: rgb(155, 55, 88);
+      }
+      
+     
+    </style>
+  </head>
+  <body>
+       <h1>Makeup Items</h1>
+    <input id="search" placeholder="Search your products", onkeyup="handleSearch(this);" />
+    <div class="makeup-container" id="makeup-container"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
