@@ -44,11 +44,7 @@ function createCard(data = {}) {
   img.setAttribute("src", data.image_link);
    card.append(img);
 
-//    let descripe = document.createElement("a");
-//     descripe.setAttribute("class", "descripe");
-//     descripe.setAttribute("href", data.description);
-//     descripe.innerText = "Product Description";
-//   card.append(descripe);
+
 let descripe = document.createElement("a");
   descripe.setAttribute("class", "descripe");
   descripe.setAttribute("onclick", `window.location.href="${data.description}"`)
